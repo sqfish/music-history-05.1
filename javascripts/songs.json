@@ -1,0 +1,39 @@
+{
+    "songs": [
+        {
+            "songName": "Murder Kroger",
+            "artistName": "Attractive Eighties Women",
+            "albumName": "Live - Coup D'é Ta​-​Ta's"
+        },
+        {
+            "songName": "Goodbye Yellow Brick Road",
+            "artistName": "Elton John",
+            "albumName": "Goodbye Yellow Brick Road"
+        },
+        {
+            "songName": "The Song That Never Ends",
+            "artistName": "Lamb Chop",
+            "albumName": "Sing-Along, Play-Along"
+        },
+        {
+            "songName": "Garden of Your Mind",
+            "artistName": "Mister Rogers",
+            "albumName": "Unknown"
+        },
+        {
+            "songName": "Dead Giveaway",
+            "artistName": "Charles Ramsey",
+            "albumName": "Unknown"
+        },
+        {
+            "songName": "Ironic",
+            "artistName": "Alanis Morisette",
+            "albumName": "Jagged Little Pill"
+        },
+        {
+            "songName": "Do Your Ears Hang Low?",
+            "artistName": "Unknown",
+            "albumName": "Unknown"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  padding-top: 70px; 
+}
+
+nav {
+  max-width: 920px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.container {
+  max-width: 920px;
+  box-sizing: border-box;
+  padding: 0 0 0 15px;
+}
+
+.row-eq-height {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display:         flex;
+}
+
+#left-panel {
+  background-color: #0F241D;
+  padding: 0 2em 1.5em 2em;
+  font-family: arial;
+  /*font-size: 0.9em;*/
+  color: #cfcfcf;
+  box-sizing: border-box;
+}
+
+#right-panel {
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+
+/* 
+ *
+ * Content of left panel element
+ *
+ * Filter input form elements
+ *
+ */
+
+.form-group {
+  margin-top: 20px;
+}
+
+#left-panel button{
+  width: 120px;
+  margin: auto;
+}
+
+:focus {
+  outline: none;
+}
+
+
+/* 
+ *
+ * Content of right panel element
+ *
+ * Song list
+ *
+ */
+
+#right-panel p {
+  margin: 0;
+  padding-bottom: 0.7em;
+}
+
+.media-body {
+  background-color: #FFF;
+}
+
+.media-heading {
+  /*color: #785616;*/
+  font-family: Verdana;
+  font-size: 1.7em;
+  font-weight: 500;
+  margin: 15px 0 5px 0;
+}
+
+.glyphicon {
+  color: rgb(222,222,222);
+}
+#right-panel div {
+  font-weight: bolder;
+}
+
+.media {
+  background-color: #042319;
+  padding: 2%;
+}
+
+.media-body {
+  padding: 5px 5px 0 5px;
+  background-color: #ACB9B4;
+  color: black;
+}
+
+.media-body p {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+#moreButton {
+  margin-top: 1em;
+  border: 2px solid black;
+  font-size: 0.9em;
+  font-weight: bold;
+}
