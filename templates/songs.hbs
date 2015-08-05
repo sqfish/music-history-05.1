@@ -1,0 +1,12 @@
+{{#each songs}}
+  <div class="media">
+    <div class="media-left media-top">
+      <span class="glyphicon glyphicon-play media-object" aria-hidden="true"></span>
+    </div>
+    <div class="media-body">
+      <button type="button" aria-hidden="close" class="close" id="deleteButton"><span aria-hidden='true'>&times;</span></button>
+      <h3 class="media-heading">{{songName}}</h3>
+      <p>{{artistName}} | {{albumName}}</p>
+    </div>
+  </div>
+{{/each}}
