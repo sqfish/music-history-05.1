@@ -14,12 +14,21 @@ requirejs(["jquery", "hbs", "bootstrap", "dom-access", "populate-songs", "get-mo
   function ($, Handlebars, bootstrap, dom, populateSongs, getMoreSongs) {
   var outputHTML = dom.getOutputElement();
   populateSongs.getSongs(displaySongData); //Display song data
+  populateSongs.getSongs(populateForm);
+
+  function populateForm(songArray) {
+    require(['hbs!../templates/form'], function(formTemplate) {
+      $("#dropdowns").html(formTemplate(songArray));
+    });
+  }
 
   function displaySongData (songArray) {
+    console.log(songArray);
     require(['hbs!../templates/songs'], function(songTemplate) {
       $(outputHTML).html("");
       displayMoreButton(outputHTML); 
       $(outputHTML).prepend(songTemplate(songArray));
+
     });
   }
 
