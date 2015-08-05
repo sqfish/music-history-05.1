@@ -1,6 +1,66 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+  font: 100% Arial, sans-serif;
+  padding-top: 70px; }
+
+nav {
+  max-width: 920px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  padding: 0; }
+
+.container {
+  max-width: 920px;
+  box-sizing: border-box;
+  padding: 0 0 0 15px; }
+  .container .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .container #left-panel {
+    background-color: #0F241D;
+    padding: 0 2em 1.5em 2em;
+    font-family: arial;
+    color: #cfcfcf;
+    box-sizing: border-box; }
+    .container #left-panel .form-group {
+      margin-top: 20px; }
+    .container #left-panel button {
+      width: 120px;
+      margin: auto; }
+  .container #right-panel .media {
+    background-color: #042319;
+    padding: 2%; }
+    .container #right-panel .media .glyphicon {
+      color: #dedede; }
+    .container #right-panel .media .media-body {
+      background-color: #FFF;
+      padding: 5px 5px 0 5px;
+      background-color: #ACB9B4;
+      color: black; }
+      .container #right-panel .media .media-body .media-heading {
+        font-family: Verdana;
+        font-size: 1.7em;
+        font-weight: 500;
+        margin: 15px 0 5px 0; }
+      .container #right-panel .media .media-body p {
+        margin: 0;
+        padding-bottom: 0; }
+  .container #right-panel #moreButton {
+    margin-top: 1em;
+    border: 2px solid black;
+    font-size: 0.9em;
+    font-weight: bold; }
+  .container #right-panel p {
+    margin: 0;
+    padding-bottom: 0.7em; }
+  .container #right-panel :focus {
+    outline: none; }
 
 /*# sourceMappingURL=main.css.map */
-
