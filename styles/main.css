@@ -10,6 +10,7 @@ body {
 
 nav {
   max-width: 920px;
+  font-size: 1.5em;
   box-sizing: border-box;
   margin: 0 auto 0 auto;
   padding: 0; }
@@ -25,12 +26,18 @@ nav {
     display: flex; }
   .container #left-panel {
     background-color: #0F241D;
-    padding: 0 2em 1.5em 2em;
+    padding: 0 25px 0 25px;
     font-family: arial;
     color: #cfcfcf;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 250px; }
     .container #left-panel .form-group {
       margin-top: 20px; }
+    .container #left-panel label {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin: 0;
+      padding: 0; }
     .container #left-panel button {
       width: 120px;
       margin: auto; }
@@ -46,12 +53,12 @@ nav {
       color: black; }
       .container #right-panel .media .media-body .media-heading {
         font-family: Verdana;
-        font-size: 1.7em;
-        font-weight: 500;
-        margin: 15px 0 5px 0; }
+        font-size: 2.1em;
+        font-weight: 600;
+        margin: 15px 0 8px 0; }
       .container #right-panel .media .media-body p {
         margin: 0;
-        padding-bottom: 0; }
+        font-size: 1.4em; }
   .container #right-panel #moreButton {
     margin-top: 1em;
     border: 2px solid black;
@@ -60,7 +67,7 @@ nav {
   .container #right-panel p {
     margin: 0;
     padding-bottom: 0.7em; }
-  .container #right-panel :focus {
+  .container :focus {
     outline: none; }
 
 /*# sourceMappingURL=main.css.map */

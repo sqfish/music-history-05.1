@@ -1,4 +1,4 @@
-define(["main"],function() {
+define(["jquery"],function($) {
   var $output = $("#right-panel");
 
   return {

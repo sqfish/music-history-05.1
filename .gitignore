@@ -1,0 +1,7 @@
+.sass-cache/
+bower.json
+bower_components/
+node_modules/
+package.json
+sass/
+styles/style.css
