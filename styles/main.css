@@ -44,6 +44,8 @@ nav {
   .container #right-panel .media {
     background-color: #042319;
     padding: 2%; }
+    .container #right-panel .media :before, .container #right-panel .media :after {
+      transition: all 500s ease-in-out; }
     .container #right-panel .media .glyphicon {
       color: #dedede; }
     .container #right-panel .media .media-body {

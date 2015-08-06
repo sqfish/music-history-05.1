@@ -17,13 +17,14 @@ requirejs(["jquery", "hbs", "bootstrap", "dom-access", "populate-songs", "get-mo
   populateSongs.getSongs(populateForm);
 
   function populateForm(songArray) {
-    require(['hbs!../templates/form'], function(formTemplate) {
-      $("#dropdowns").html(formTemplate(songArray));
+    require(['hbs!../templates/form-dropdown-artist', 'hbs!../templates/form-dropdown-album'], 
+      function(artistTemplate, albumTemplate) {
+      $("#artist-dropdown").append(artistTemplate(songArray));
+      $("#album-dropdown").append(albumTemplate(songArray));
     });
   }
 
   function displaySongData (songArray) {
-    console.log(songArray);
     require(['hbs!../templates/songs'], function(songTemplate) {
       $(outputHTML).html("");
       displayMoreButton(outputHTML); 
@@ -43,6 +44,7 @@ requirejs(["jquery", "hbs", "bootstrap", "dom-access", "populate-songs", "get-mo
   function displayMoreSongs (songArray) {
     require(['hbs!../templates/songs'], function(songTemplate) {
       $("#moreButton").before(songTemplate(songArray));
+      populateForm(songArray);
     });
   }
 
