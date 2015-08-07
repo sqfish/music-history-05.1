@@ -2,7 +2,7 @@ define(function() {
   return {
     getSongs: function (callback) {
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", 'javascripts/songs.json');
+      xhr.open("GET", 'https://fiery-fire-5905.firebaseio.com/.json');
       xhr.send();
       xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {

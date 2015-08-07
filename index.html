@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">View Music <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Add Music</a></li>
+            <li><a href="addmusic.html">Add Music</a></li>
             <li><a href="#">Profile</a></li>
           </ul>
       
@@ -66,12 +66,6 @@
 
       <form class="form-horizontal">
         <div class="form-group">
-        <!-- <div id="slider-and-selects"> -->
-          <label for="song-length">Song length:</label>
-          <input type="range" id="song-length" class="input-md">
-        </div>
-
-        <div class="form-group">
           <label for="artist-name" class="col-sm-2 control-label">Artist:</label>
           <div class="col-sm-9 col-md-offset-1">
           <select id="artist-dropdown" name="artist-name" class="form-control input-sm">
@@ -93,39 +87,39 @@
           INPUT FORM ELEMENTS
           checkboxes grouped for positioning -->
 
-        <div class="form-group">
+        <div class="form-group" id="genre-checkbox">
           <!-- <label>Genre:</label> -->
           <div class="col-sm-5 col-sm-offset-1">
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="option1">Rock
+                <input type="checkbox" value="Rock">Rock
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="option2">Pop
+                <input type="checkbox" value="Pop">Pop
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="option3">Blues
+                <input type="checkbox" value="Blues">Blues
               </label>
             </div>  
           </div>
           <div class="col-sm-6">
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="option1">Classical
+                <input type="checkbox" value="Classical">Classical
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="option2">Jazz
+                <input type="checkbox" value="Jazz">Jazz
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="option3">Hip Hop
+                <input type="checkbox" value="Hip-Hop">Hip-Hop
               </label>
             </div>  
           </div>
@@ -137,38 +131,45 @@
           FORM SUBMIT -->
         <div class="form-group">
           <center>
-          <button type="button" class="btn btn-default">Filter</button>
+          <button type="button" id="filterButton" class="btn btn-default">Filter</button>
           </center>
         </div>
       </form>
       </div>
 
     <div id="right-panel" class="col-xs-12 col-s-9 col-md-9 col-md-offset-0">
-    <div class="media">
-       <div class="media-left media-top">
-      <span class="glyphicon glyphicon-play media-object" aria-hidden="true"></span>
-  </div>
-  <div class="media-body">
+      <div class="media">
+        <div class="media-left media-top">
+          <span class="glyphicon glyphicon-play media-object" aria-hidden="true"></span>
+        </div>
+        <div class="media-body">
 
-        <h3 class="media-heading">Song Name</h3>
-        <p>Artist Name | Album Name | Genre</p>
-      </div>
-      </div>
-
-      <div>
-        <h3>Song Name</h3>
-        <p>Artist Name | Album Name | Genre</p>
+          <h3 class="media-heading">Song Name</h3>
+          <p>Artist Name | Album Name | Genre</p>
+        </div>
       </div>
 
-      <div>
-        <h3>Song Name</h3>
-        <p>Artist Name | Album Name | Genre</p>
+      <div class="media">
+        <div class="media-left media-top">
+          <span class="glyphicon glyphicon-play media-object" aria-hidden="true"></span>
+        </div>
+        <div class="media-body">
+
+          <h3 class="media-heading">Song Name</h3>
+          <p>Artist Name | Album Name | Genre</p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left media-top">
+          <span class="glyphicon glyphicon-play media-object" aria-hidden="true"></span>
+        </div>
+        <div class="media-body">
+
+          <h3 class="media-heading">Song Name</h3>
+          <p>Artist Name | Album Name | Genre</p>
+        </div>
       </div>
 
-      <div>
-        <h3>Song Name</h3>
-        <p>Artist Name | Album Name | Genre</p>
-      </div>
     </div></div>
   </div>
 </div>

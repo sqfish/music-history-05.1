@@ -43,7 +43,9 @@ nav {
       margin: auto; }
   .container #right-panel .media {
     background-color: #042319;
-    padding: 2%; }
+    padding: 2%;
+    margin-top: 0;
+    margin-bottom: 15px; }
     .container #right-panel .media :before, .container #right-panel .media :after {
       transition: all 500s ease-in-out; }
     .container #right-panel .media .glyphicon {

@@ -16,44 +16,78 @@ requirejs(["jquery", "hbs", "bootstrap", "dom-access", "populate-songs", "get-mo
   populateSongs.getSongs(displaySongData); //Display song data
   populateSongs.getSongs(populateForm);
 
-  function populateForm(songArray) {
+  function populateForm(songsObject) {
     require(['hbs!../templates/form-dropdown-artist', 'hbs!../templates/form-dropdown-album'], 
-      function(artistTemplate, albumTemplate) {
-      $("#artist-dropdown").append(artistTemplate(songArray));
-      $("#album-dropdown").append(albumTemplate(songArray));
+    function(artistTemplate, albumTemplate) {
+      console.log(songsObject);
+      $("#artist-dropdown").append(artistTemplate(songsObject));
+      $("#album-dropdown").append(albumTemplate(songsObject));
     });
   }
 
-  function displaySongData (songArray) {
+  function displaySongData (songsObject) {
     require(['hbs!../templates/songs'], function(songTemplate) {
       $(outputHTML).html("");
-      displayMoreButton(outputHTML); 
-      $(outputHTML).prepend(songTemplate(songArray));
-
+      // displayMoreButton(outputHTML); 
+      $(outputHTML).prepend(songTemplate(songsObject));
     });
   }
 
-  function displayMoreButton(playlistHTML) {
-    var moreButton = document.createElement("BUTTON");
-    moreButton.id = "moreButton";
-    $(moreButton).attr("type", "button");
-    $(moreButton).text("More");
-    outputHTML.append(moreButton);
-  }
+  // function displayMoreButton(playlistHTML) {
+  //   var moreButton = document.createElement("BUTTON");
+  //   moreButton.id = "moreButton";
+  //   $(moreButton).attr("type", "button");
+  //   $(moreButton).text("More");
+  //   outputHTML.append(moreButton);
+  // }
 
-  function displayMoreSongs (songArray) {
-    require(['hbs!../templates/songs'], function(songTemplate) {
-      $("#moreButton").before(songTemplate(songArray));
-      populateForm(songArray);
-    });
-  }
+  // function displayMoreSongs (songsObject) {
+  //   require(['hbs!../templates/songs'], function(songTemplate) {
+  //     $("#moreButton").before(songTemplate(songsObject));
+  //     populateForm(songsObject);
+  //   });
+  // }
 
-  $(document).on("click", "#moreButton", function() {
-    getMoreSongs.getMoreSongs(displayMoreSongs);  ///// Call displayMoreSongs
-  });
+  // $(document).on("click", "#moreButton", function() {
+  //   getMoreSongs.getMoreSongs(displayMoreSongs);  ///// Call displayMoreSongs
+  // });
 
   $(document).on("click", "#deleteButton", function(){
     $(this).parent().parent().remove();
   });
+
+
+var songData = {
+  songs: {},
+  displayData: function(){},
+  displayMoreData: function(){},
+  updateDropdowns: function(){},
+  updateSongObject: function(){}
+};
+
+$(document).on("click", "#filterButton", function() {
+  var artistFilter = $("#artist-dropdown").val();
+  var albumFilter = $("#album-dropdown").val();
+  var genreFilter = $("#genre-checkbox :checked").map(function() {
+    return $(this).val();
+  }).get();
+  console.log(genreFilter);
+  $('.media').hide();
+  $('.media :contains(' + artistFilter + ')').parent().show();
+  // $(".media:not(:contains(' + artistFilter + '))").hide();
+  $('.media :contains(' + albumFilter + ')').parent().show();
+
+  
+  for(var i = 0; i < genreFilter.length; i++) {
+    var val = genreFilter[i];
+    var item = $('.media :contains(' + val + ')');
+    if(item) {
+      item.parent().show();
+    }
+  }
+  // $('option:contains(' + artistFilter + ')').remove();
 });
 
+
+
+});

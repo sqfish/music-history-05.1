@@ -1,0 +1,66 @@
+{
+    "songs": [
+        {
+            "songName": "Murder Kroger",
+            "artistName": "Attractive Eighties Women",
+            "albumName": "Live - Coup D'é Ta​-​Ta's",
+            "genre": "Rock"
+        },
+        {
+            "songName": "Goodbye Yellow Brick Road",
+            "artistName": "Elton John",
+            "albumName": "Goodbye Yellow Brick Road",
+            "genre": "Pop"
+        },
+        {
+            "songName": "The Song That Never Ends",
+            "artistName": "Lamb Chop",
+            "albumName": "Sing-Along, Play-Along",
+            "genre": "Hip-Hop"
+        },
+        {
+            "songName": "Garden of Your Mind",
+            "artistName": "Mister Rogers",
+            "albumName": "Unknown",
+            "genre": "Pop"
+        },
+        {
+            "songName": "Dead Giveaway",
+            "artistName": "Charles Ramsey",
+            "albumName": "Unknown",
+            "genre": "Hip-Hop"
+        },
+        {
+            "songName": "Ironic",
+            "artistName": "Alanis Morisette",
+            "albumName": "Jagged Little Pill",
+            "genre": "Pop"
+        },
+        {
+            "songName": "Do Your Ears Hang Low?",
+            "artistName": "Unknown",
+            "albumName": "Unknown",
+            "genre": "Classical"
+        },
+        {
+          "songName": "Legs",
+          "artistName": "ZZ Top",
+          "albumName": "Eliminator"
+        },
+        {
+          "songName": "The Logical Song",
+          "artistName": "Supertramp",
+          "albumName": "Breakfast in America"
+        },
+        {
+          "songName": "Another Brick in the Wall",
+          "artistName": "Pink Floyd",
+          "albumName": "The Wall"
+        },
+        {
+          "songName": "Welcome to the Jungle",
+          "artistName": "Guns & Roses",
+          "albumName": "Appetite for Destruction"
+        }
+      ]
+    }
