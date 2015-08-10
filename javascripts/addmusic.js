@@ -1,14 +1,12 @@
 var genre;
 $(".genre").click(function(){
   genre = $(this).val();
-  console.log(genre);
 });
 
 $("#addMusicButton").click(function(){
   var songName = document.getElementById("songNameInput").value;
   var artistName = document.getElementById("artistNameInput").value;
   var albumName = document.getElementById("albumNameInput").value;
-
 
 
  
