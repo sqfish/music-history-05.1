@@ -68,7 +68,7 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "dom-access"],
         console.log(albumsNarrowed);
         console.log(albumTemplate(albumsNarrowed));
         $("#album-dropdown :enabled").remove();
-        $("#album-dropdown").append(albumTemplate(albumsNarrowed)); //change this, right now option disabled are removed and :enabled makes list too long
+        $("#album-dropdown").append(albumTemplate(albumsNarrowed)); 
       });
     });
   }
